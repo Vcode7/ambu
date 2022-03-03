@@ -1,0 +1,148 @@
+.bck{
+    overflow: hidden;
+    height: 50vh;
+    margin: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bck figure {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    width: 500%;
+    animation: slider 12s infinite linear;
+}
+
+.bck figure img{
+    width: 20%;
+	float: left;
+}
+
+
+@keyframes slider {
+    0%{
+        left:0%;
+    }
+    20%{
+        left:-400%;
+    }
+    25%{
+        left:-400%;
+    }
+    30%{
+        left:-200%;
+    }
+    35%{
+        left:-300%;
+    }
+    40%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-0%;
+    }
+    55%{
+        left:-300%;
+    }
+    60%{
+        left:-300%;
+    }
+    70%{
+        left:-0%;
+    }
+    75%{
+        left:-400%;
+    }
+    85%{
+        left:-100%;
+    }
+    90%{
+        left:-200%;
+    }
+	100%{
+        left:-200%;
+    }
+}
+
+.heading{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-1 {
+    font-size: 1.6rem;
+    opacity: 0;
+    letter-spacing: 20px;
+    animation: tl2 2s linear forwards;
+}
+
+.text-2{
+    letter-spacing: -100px;
+    animation: tl2 3s linear forwards;
+    font-size: 1.6rem;
+    opacity: 0;
+
+
+}
+
+.text-3{
+	top: -1000px;
+    font-size: 2rem;
+
+    position: relative;
+    animation: tl1 5s linear forwards;
+
+}
+
+@keyframes tl1 {
+    100%{
+		top:0px;
+    }
+}
+
+@keyframes tl2 {
+	60%{
+       opacity: 0;
+
+    }
+    100%{
+       letter-spacing: 1px;
+       opacity: 1;
+
+    }
+}
+
+.para1{
+    background-color: rgb(250, 120, 120);
+    padding: 30px;
+    text-align: center;
+}
+
+
+.para2{
+    background-color: rgb(120, 200, 120);
+    padding: 30px;
+    text-align: center;
+}
+
+.img img{
+    width: 100%;
+    margin: 20px 0px;
+}
+
